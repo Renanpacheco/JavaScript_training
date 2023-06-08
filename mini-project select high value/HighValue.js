@@ -29,5 +29,7 @@ function collectValue(form){ // function for capture the user input
     }
 
     console.log(values);
-    console.log(highValue(values));
+    //console.log(highValue(values));
+    let response = "The highest value is " + highValue(values);
+    document.getElementById('capture').innerHTML = response; 
 }
