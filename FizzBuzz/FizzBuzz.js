@@ -22,9 +22,24 @@ function fizzBuzz(entry){ // returns a result if a entry is divisible by three w
     }
 }
 
+function fizzBuzzArray(sizeArray){ // create a new array with the size informated, and fill it with sequentials numbers begin in 1 and obeys the rules of FizzBuzz
+    if(sizeArray <= 0){
+        return "size invalid, please input other size";
+    }
 
+    let array = [];
+    for(let i = 0; i < sizeArray; i++){
+        array.push(fizzBuzz(i+1));
+    }
+    return array;
+
+}
+
+/*
 console.log(fizzBuzz(3));
 console.log(fizzBuzz(5));
 console.log(fizzBuzz(15));
 console.log(fizzBuzz(1));
-console.log(fizzBuzz("h"));
+console.log(fizzBuzz("h"));*/
+
+console.log(fizzBuzzArray(150));
