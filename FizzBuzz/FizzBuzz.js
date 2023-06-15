@@ -3,7 +3,6 @@ function fizzBuzz(entry){ // returns a result if a entry is divisible by three w
     //or error if the entry isn't a number
     let div3;
     let div5;
-//
     if (isNaN(entry)){
         return "error";
     }else{
