@@ -1,7 +1,6 @@
 function fizzBuzz(entry){ // returns a result if a entry is divisible by three with the word "fizz", or divisible by 
     //five with the word "buzz", divisible by both 3 and 5 with the word "fizzbuzz", if it isn't divisible return the value of
     //or error if the entry isn't a number
-    //let result;
     let div3;
     let div5;
 
